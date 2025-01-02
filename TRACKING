@@ -22,7 +22,7 @@ Big O notation complexity: Source : Course.
       - The parameter for the time complexity is : No of Operation.
       - There are three types of notation.
       - Big-Omega: Best Case scenario
-      - Big-Theta: Average Case Scenario
+      - Big-Theta: Average Case Scenario 
       - Big-O : Worst-case scenario
 
       : Space Complexity
@@ -38,6 +38,16 @@ The graph is always a straight line where x=y.
 
 
 ========================================================================================= 2ST JAN 2025 ==================================================================================
+
+Pointers :
+Usage of pointers:
+0. Pointer to Variable
+1. Pointer to pointer
+2. Pointer to array
+3. Pointer to function
+4. Pointer to Structure
+5. Pointer to access member function.
+
 ========================================================================================= 3ST JAN 2025 ==================================================================================
 ========================================================================================= 4ST JAN 2025 ==================================================================================
 ========================================================================================= 5ST JAN 2025 ==================================================================================
