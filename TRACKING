@@ -19,10 +19,18 @@ Arrays and pointers.
 Big O notation complexity: Source : Course.
 
       : Time Complexity
-      - Parameter for the time complexity is : No of Operation.
-      - 
+      - The parameter for the time complexity is : No of Operation.
+      - There are three types of notation.
+      - Big-Omega: Best Case scenario
+      - Big-Theta: Average Case Scenario
+      - Big-O : Worst-case scenario
 
       : Space Complexity
+
+###############
+Big O Notation: Worst case scenario.
+The graph is always a straight line where x=y.
+( Number of operations =  Number of N ).
       -
 
 --------------------------------------------------------------------------------------------
