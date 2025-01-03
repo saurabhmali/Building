@@ -1,0 +1,23 @@
+Pointers and Variables :
+Logic and code
+-------------------------
+int iValue=23;
+int* ptr = &iValue;
+-------------------------
+
+
+
+Pointers and Variables
+Logic and code
+-------------------------
+int arr[]={21,31,41,51,61};
+int* ptr = arr;
+-------------------------
+
+
+Pointers and Funcitons
+Logic and code
+-------------------------
+int i;
+int* ptr = &iValue;
+-------------------------
