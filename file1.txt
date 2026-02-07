@@ -1,0 +1,48 @@
+2025-02-07 10:15:23 IST [2345] LOG:  database system was shut down at 2025-02-07 10:14:55 IST
+2025-02-07 10:15:23 IST [2345] LOG:  database system is ready to accept connections
+2025-02-07 10:15:24 IST [2347] LOG:  autovacuum launcher started
+2025-02-07 10:16:01 IST [2350] user=admin db=inventory LOG:  connection authorized: user=admin database=inventory
+2025-02-07 10:16:02 IST [2350] user=admin db=inventory LOG:  statement: SELECT * FROM products;
+2025-02-07 10:16:10 IST [2351] user=report_user db=analytics LOG:  connection authorized: user=report_user database=analytics
+2025-02-07 10:16:12 IST [2351] user=report_user db=analytics LOG:  statement: SELECT count(*) FROM sales;
+2025-02-07 10:16:20 IST [2352] user=admin db=inventory ERROR:  relation "customer" does not exist at character 15
+2025-02-07 10:16:20 IST [2352] user=admin db=inventory STATEMENT:  SELECT * FROM customer;
+2025-02-07 10:17:05 IST [2353] user=admin db=inventory LOG:  duration: 120.345 ms  statement: UPDATE products SET price = price * 1.1;
+2025-02-07 10:17:30 IST [2354] user=etl_user db=warehouse LOG:  connection authorized: user=etl_user database=warehouse
+2025-02-07 10:17:32 IST [2354] user=etl_user db=warehouse LOG:  statement: INSERT INTO orders VALUES (101, 'Laptop', 2);
+2025-02-07 10:18:01 IST [2355] LOG:  checkpoint starting: time
+2025-02-07 10:18:05 IST [2355] LOG:  checkpoint complete: wrote 12 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled
+2025-02-07 10:19:10 IST [2356] user=admin db=inventory WARNING:  there is already a transaction in progress
+2025-02-07 10:19:45 IST [2357] user=guest db=test LOG:  connection received: host=192.168.1.10 port=54321
+2025-02-07 10:19:46 IST [2357] user=guest db=test FATAL:  password authentication failed for user "guest"
+2025-02-07 10:20:01 IST [2358] LOG:  received smart shutdown request
+2025-02-07 10:20:02 IST [2347] LOG:  autovacuum launcher shutting down
+2025-02-07 10:20:03 IST [2345] LOG:  database system is shut down
+2025-02-07 09:58:10 IST [1201] LOG:  starting PostgreSQL 14.2 on x86_64-pc-linux-gnu
+2025-02-07 09:58:10 IST [1201] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2025-02-07 09:58:10 IST [1201] LOG:  listening on IPv6 address "::", port 5432
+2025-02-07 09:58:10 IST [1201] LOG:  database system was shut down at 2025-02-07 09:55:01 IST
+2025-02-07 09:58:10 IST [1201] LOG:  database system is ready to accept connections
+2025-02-07 09:58:11 IST [1203] LOG:  autovacuum launcher started
+
+2025-02-07 10:00:01 IST [1210] user=app_user db=orders LOG:  connection authorized: user=app_user database=orders
+2025-02-07 10:00:01 IST [1210] user=app_user db=orders LOG:  statement: SELECT * FROM customers LIMIT 100;
+2025-02-07 10:00:02 IST [1210] user=app_user db=orders LOG:  duration: 34.543 ms
+
+2025-02-07 10:01:15 IST [1211] user=admin db=inventory LOG:  connection authorized: user=admin database=inventory
+2025-02-07 10:01:16 IST [1211] user=admin db=inventory LOG:  statement: UPDATE products SET stock = stock - 1 WHERE id = 1001;
+2025-02-07 10:01:16 IST [1211] user=admin db=inventory LOG:  duration: 5.332 ms
+
+2025-02-07 10:02:10 IST [1212] user=analytics db=reports LOG:  connection authorized: user=analytics database=reports
+2025-02-07 10:02:12 IST [1212] user=analytics db=reports LOG:  statement: SELECT region, sum(amount) FROM sales GROUP BY region;
+2025-02-07 10:02:15 IST [1212] user=analytics db=reports LOG:  duration: 210.876 ms
+
+2025-02-07 10:03:44 IST [1213] user=guest db=test ERROR:  relation "employee" does not exist at character 15
+2025-02-07 10:03:44 IST [1213] user=guest db=test STATEMENT:  SELECT * FROM employee;
+
+2025-02-07 10:04:01 IST [1214] user=etl db=warehouse LOG:  COPY sales FROM '/data/sales_20250207.csv' CSV HEADER;
+2025-02-07 10:04:05 IST [1214] user=etl db=warehouse LOG:  duration: 4012.876 ms
+
+2025-02-07 10:05:10 IST [1215] LOG:  checkpoint starting: time
+2025-02-07 10:05:13 IST [1215] LOG:  checkpoint complete: wrote 34 buffers
+
